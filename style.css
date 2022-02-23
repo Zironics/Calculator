@@ -1,0 +1,84 @@
+body,html{
+    height: 100%;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #a5a58d;
+    padding: 16px;
+    border-radius: 8px;
+    width: 350px;
+    height: 400px;
+}
+
+.operation{
+    font-size: 16px;
+    height: 16px;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: flex-end;
+    border: 1px solid black;
+    height: 60px;
+    margin-bottom: 8px;
+    background-color: white;
+}
+
+.current{
+    font-size: 32px;
+    height: 32px;
+}
+
+.options{
+    display: flex;
+    gap:5px;
+}
+
+.clear{
+    background-color: rgba(255, 0, 0, 0.836);
+}
+
+.delete{
+    background-color: rgba(0, 255, 255, 0.527);
+}
+
+.options > button{
+    flex:1;
+    padding:8px 16px;
+    border: 1px solid black;
+}
+
+.pad{
+    flex:1;
+    padding: 5px;
+    display: grid;
+    margin-top: 16px;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap:16px;
+}
+
+.pad >div{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.pad div:hover{
+    background-color: aquamarine;
+}
+
+.pad div:active{
+    background-color: #00ff37;
+}
